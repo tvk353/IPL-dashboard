@@ -36,33 +36,33 @@ In this project I  build a **IPL Dashboard App** by applying the concepts I have
 
 #### Add Functionality
 
-The app must have the following functionalities
+The app had the following functionalities
 
-- When the app is opened Home Route should be displayed.
+- When the app is opened Home Route will be displayed.
 - When the Home Route is opened,
 
-  - Make HTTP GET request to the following URL `https://apis.ccbp.in/ipl`
-  - After fetching the data, the list of teams should be displayed
-  - **_loader_** should be displayed while the HTTP request is fetching the data
+  - Made a HTTP GET request to the following URL `https://apis.ccbp.in/ipl`
+  - After fetching the data, the list of teams will be displayed
+  - **_loader_** will be displayed while the HTTP request is fetching the data
 
 - When a team card in Home Route is clicked,
 
-  - Page should be navigated to the Team Matches route with the URL `/team-matches/:id`
+  - Page will navigate to the Team Matches route with the URL `/team-matches/:id`
 
 - When the Team Matches Route is opened,
 
-  - Make HTTP GET request to the following URL `https://apis.ccbp.in/ipl/<team_id>` with the team id to get the previous matches data of the team
-  - **_loader_** should be displayed while the HTTP request is fetching the data
+  - Made HTTP GET request to the following URL `https://apis.ccbp.in/ipl/<team_id>` with the team id to get the previous matches data of the team
+  - **_loader_** will be displayed while the HTTP request is fetching the data
 
     Example: `https://apis.ccbp.in/ipl/KKR`
 
-  - After fetching the data, the team banner, latest match, and list of recent matches should be displayed
+  - After fetching the data, the team banner, latest match, and list of recent matches will be displayed
   </details>
 
 <details>
 <summary>Click to view the Example response</summary>
 
-- The example response from a request to this API `https://apis.ccbp.in/ipl` will be
+- The example response from a request to this API `https://apis.ccbp.in/ipl` is
 
 ```json
 {
@@ -78,7 +78,7 @@ The app must have the following functionalities
 }
 ```
 
-- The example response from a request to this API `https://apis.ccbp.in/ipl/<team_id>` will be
+- The example response from a request to this API `https://apis.ccbp.in/ipl/<team_id>` is
 
 ```json
 {
@@ -153,13 +153,13 @@ The app must have the following functionalities
 
 </details>
 
-#### Quick Tips
+#### Loader Details
 
 <details>
-<summary>Click to view Quick Tips</summary>
+<summary>Click to view Loader details</summary>
 
-- To show the animated loader, we need to import the loader component as `import Loader from 'react-loader-spinner'`
-- In order to form the given animated loader, use **Oval** for `type` attribute & also use **#ffffff** for `color` attribute of `Loader` component
+- To show the animated loader, imported a loader component as `import Loader from 'react-loader-spinner'`
+- In order to form the given animated loader, used **Oval** for `type` attribute & also used **#ffffff** for `color` attribute of `Loader` component
 
   ```
   <Loader type="Oval" color="#ffffff" height={50} width={50} />
@@ -168,18 +168,17 @@ The app must have the following functionalities
   </details>
   <br/>
 
-> #### Important Note
+> #### Important points
 >
 > <details open>
-> <summary>Click to view Important Note Points</summary>
+> <summary>Click to view Important Points</summary>
 >
-> **The following HTML attributes are required for the HTML for the tests to pass**
+> **The following HTML attributes are created for the HTML for the tests to pass**
 >
-> - The IPL logo in the Home Route should have the HTML alt attribute value as `ipl logo`
-> - The Banner image of TeamMatches component in the Team Matches Route should have the HTML alt attribute value as `team banner`
-> - The alt texts for the images received from the response are given in the **Example response**
-> - The API response received from the given **apiUrl** should be converted to camel case
-> - Wrap the `Loader` component with an HTML container element and add the `testid` attribute value as `loader` to it as shown below
+> - The IPL logo in the Home Route had the HTML alt attribute value as `ipl logo`
+> - The Banner image of TeamMatches component in the Team Matches Route had the HTML alt attribute value as `team banner`
+> - The API response received from the given **apiUrl**  converted to camel case
+> - Wraped the `Loader` component with an HTML container element and added the `testid` attribute value as `loader` to it as shown below
 >   ```
 >   <div testid="loader">
 >        <Loader type="Oval" color="#ffffff" height={80} width={80} />
@@ -187,8 +186,8 @@ The app must have the following functionalities
 >   ```
 > - Render HomeRoute component when path in URL matches `/`
 > - Render TeamMatchesRoute component when path in URL matches `/team-matches/:id`
-> - No need to use the `BrowserRouter` in `App.js` as we have already included in `index.js` file
-> - Each TeamMatchesRoute should have different gradient colors as background based on the selected team
+> - No need to use the `BrowserRouter` in `App.js` as I already included in `index.js` file
+> - Each TeamMatchesRoute will have different gradient colors as background based on the selected team
 > </details>
 
 ### Resources
@@ -249,9 +248,4 @@ The app must have the following functionalities
 
 - Bree Serif
 
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
+
