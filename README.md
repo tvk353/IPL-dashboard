@@ -120,9 +120,9 @@ The app had the following functionalities
 </details>
 
 <details>
-<summary>Click to view the Implementation Files</summary>
+<summary>Click to view the Implemented Files</summary>
 
-- Your task is to complete the implementation of
+- I have implemented the following files
   - `src/App.js`
   - `src/components/Home/index.js`
   - `src/components/Home/index.css`
