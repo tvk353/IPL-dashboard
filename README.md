@@ -1,4 +1,4 @@
-In this practice let's build a **IPL Dashboard App** by applying the concepts we have learned till now.
+In this project I  build a **IPL Dashboard App** by applying the concepts I have learned in React.
 
 ### Refer to images below:
 
